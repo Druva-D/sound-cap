@@ -1,0 +1,13 @@
+{
+  "name": "soundcap",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sound Capsule, rebuilt as a PWA on the Spotify Web API",
+  "type": "module",
+  "scripts": {
+    "start": "node serve.mjs",
+    "icons": "sh scripts/icons.sh",
+    "test": "node --test --test-isolation=none test/*.test.js",
+    "test:browser": "node test/browser/run.js"
+  }
+}

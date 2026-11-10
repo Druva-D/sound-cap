@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Privacy policy · Soundcap</title>
+  <meta name="description" content="How Soundcap handles your Spotify data.">
+  <meta name="theme-color" content="#000000">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="no-referrer">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="doc">
+    <a class="doc-back" href="./">← Back to Soundcap</a>
+    <h1>Privacy policy</h1>
+    <p class="muted">Last updated November 10, 2026</p>
+
+    <p>Soundcap is a free, unofficial web app that shows you statistics about your own Spotify listening. It isn't affiliated with or endorsed by Spotify. This page explains what data it uses and where that data goes.</p>
+
+    <h2>The short version</h2>
+    <ul>
+      <li>Soundcap has <strong>no server and no database</strong>. Your Spotify data is fetched by your browser directly from Spotify and stored only in your browser on your device.</li>
+      <li>Nobody else, including whoever runs this site, can see your listening history.</li>
+      <li>The site uses Google Tag Manager to count visits. It never receives your Spotify data.</li>
+      <li>You can delete everything at any time with <em>Settings → Disconnect and delete my data</em>.</li>
+    </ul>
+
+    <h2>What Soundcap accesses from Spotify</h2>
+    <p>When you connect, you sign in on Spotify's own page, so Soundcap never sees your password. You grant two read-only permissions:</p>
+    <ul>
+      <li><strong>Recently played</strong> (<code>user-read-recently-played</code>): your 50 most recent plays, used to build your capsule over time.</li>
+      <li><strong>Top artists and tracks</strong> (<code>user-top-read</code>): Spotify's ranking of your favourites.</li>
+    </ul>
+    <p>Soundcap also reads your display name and profile picture to show who's signed in, and looks up public track, album and artist details (artwork, genres, links). It can't see your email address or payment details, and it can't change anything on your Spotify account.</p>
+
+    <h2>What is stored, and where</h2>
+    <p>All of the following is stored only in your browser's local storage (localStorage and IndexedDB) on the device you're using:</p>
+    <ul>
+      <li>your Spotify login tokens and the Spotify app Client ID you entered;</li>
+      <li>your saved plays: track, artist, album, time played and artwork link;</li>
+      <li>any Spotify data export or Soundcap backup you import;</li>
+      <li>cached artist and track details, your Spotify user ID and display name.</li>
+    </ul>
+    <p>This data is kept until you delete it, so your capsule can cover past weeks and months. It is never uploaded anywhere. The site's host (Netlify) only serves the app's files and never receives your listening data. It may keep standard server logs, such as IP addresses.</p>
+    <p>If a different Spotify account signs in on the same browser, Soundcap won't show it the previous account's history.</p>
+
+    <h2>Analytics</h2>
+    <p>Soundcap uses <strong>Google Tag Manager</strong>, operated by Google, to count visits. Google may collect the pages you view, your browser and device type, your approximate location based on your IP address, and use cookies to recognise repeat visits. Soundcap sends Google no Spotify data: no listening history, track or artist names, Spotify IDs, or login details. Login codes are removed from the page address before analytics loads.</p>
+    <p>If your browser sends a <em>Do Not Track</em> or <em>Global Privacy Control</em> signal, analytics isn't loaded at all. Content blockers also prevent it. See <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a> for how Google handles this data.</p>
+
+    <h2>Your choices and deleting your data</h2>
+    <ul>
+      <li><strong>Disconnect:</strong> <em>Settings → Disconnect and delete my data</em> signs you out and deletes everything Soundcap stored on that device. Do this on each device you used.</li>
+      <li><strong>Revoke access on Spotify:</strong> remove Soundcap at <a href="https://www.spotify.com/account/apps/" rel="noopener">spotify.com/account/apps</a>.</li>
+      <li><strong>Keep a copy:</strong> <em>Settings → Export backup</em> downloads your saved history as a file. Keep that file somewhere safe.</li>
+      <li>Clearing this site's data in your browser settings also deletes everything.</li>
+    </ul>
+    <p>Because nothing is stored on a server, there is no copy of your data anywhere except on your own devices.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the date at the top will be updated.</p>
+  </main>
+</body>
+</html>
